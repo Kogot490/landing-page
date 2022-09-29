@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(113, 93, 67);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.section-one,
+.content-one,
+.section-two,
+.section-three,
+.section-four,
+.footer,
+.header,
+.header-links,
+.container-one {
+    display: flex;
+    border: rgb(255, 2, 2) double;
+    
+}
+
+.container-one {
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.section-one,
+.section-two,
+.section-three,
+.section-four {
+    flex-grow: 1;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+}
+.header {
+    justify-content: space-between;
+}
+
+.section-one {
+    justify-content: center;
+    
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    color: red;
+    background-color: black;
+}
+
