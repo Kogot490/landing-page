@@ -3,7 +3,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
 }
+
 
 .section-one,
 .content-one,
@@ -13,7 +16,8 @@ body {
 .footer,
 .header,
 .header-links,
-.container-one {
+.container-one,
+.img-container {
     display: flex;
     border: rgb(245, 245, 245) double;
     
@@ -25,6 +29,19 @@ body {
 .section-three,
 .section-four {
     flex-grow: 1;
+    
+}
+
+.header,
+.footer {
+    background-color: black;
+    color: rgb(189, 165, 132);
+    font-size: 20px;
+}
+
+.footer {
+    justify-content: center;
+    font-size: 15px;
 }
 .logo {
     width: 100px;
@@ -45,42 +62,69 @@ body {
 }
 
 a {
-    color: rgb(80, 0, 0, 0.768);
+    color: rgb(189, 165, 132);
     font-size: 20px;
 }
-.section-one {
+.section-one,
+.section-three {
     justify-content: center;
-    background-color: rgba(80, 0, 0, 0.768);
+    background-color: rgba(59, 0, 0, 0.768);
     color: rgb(189, 165, 132);
-    border: black inset;
+    border: black outset;
     
 }
 
-.container-one {
+.container-one,
+.section-two {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
     padding: 10%;
-    
-    
+}
+
+.img-one,
+.img-two,
+.img-three,
+.img-four {
+    display: flex;
+    flex-direction: column;
 }
 
 .title  {
     font-weight: bold;
     font-size: 50px;
+    /* font-family: 'Nosifer', cursive; */
+    /* color: rgba(227, 0, 0, 0.768); */
+    
 }
 .thrall {
-    width: 425px;
-    height: auto;
-    padding: 20px;
-    border-radius: 30%;
+    width: 375px;
+    height: 375px;
+    margin: 20px;
+    border-radius: 10%;
+    align-self: center;
+    border: black solid;
     
 }
 
+.section-two,
+.section-four {
+    color: rgba(59, 0, 0, 0.768);
+    background-color: rgb(189, 165, 132);
+}
+
+.title-two {
+    align-self: center;
+}
+
+.img-container {
+    align-items: center;
+}
 
 
+.section-three {
 
-
+}
 
 
 
@@ -93,8 +137,10 @@ a {
 button {
     width: 100px;
     height: 40px;
-    color: red;
+    color: rgba(227, 0, 0, 0.768);
     background-color: black;
     font-size: 20px;
+    border-radius: 15%;
+    font-weight: bolder;
 }
 
