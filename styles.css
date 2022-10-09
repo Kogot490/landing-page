@@ -11,9 +11,14 @@ body {
 
 .section-one,
 .content-one,
+.content-two,
 .section-two,
 .section-three,
 .section-four,
+.img-one,
+.img-two,
+.img-three,
+.img-four,
 .footer,
 .header,
 .header-links,
@@ -24,7 +29,7 @@ body {
 .quote-src,
 .quote-container {
     display: flex;
-    border: rgb(245, 245, 245) double;
+    /* border: rgb(245, 245, 245) double; */
     
 }
 
@@ -34,7 +39,7 @@ body {
 .section-three,
 .section-four {
     flex-grow: 1;
-    
+    flex-wrap: wrap;
 }
 
 .header,
@@ -91,8 +96,14 @@ a {
 .img-two,
 .img-three,
 .img-four {
-    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 0px;
+}
+
+.img-text {
+    max-width: 200px;
 }
 
 .title  {
@@ -105,13 +116,35 @@ a {
 .thrall {
     width: 375px;
     height: 375px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 10%;
     align-self: center;
     border: black solid;
     
 }
 
+.section-two {
+    align-items: center;
+    padding: 25px;
+}
+
+.content-two {
+    flex-flow: column wrap;
+}
+
+.burningblade,
+.harpy,
+.kolkar,
+.ktmarine {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 1;
+    margin: 20px;
+    border-radius: 10%;
+    align-self: center;
+    border: black solid;
+    
+}
 .section-two,
 .section-four {
     color: rgba(59, 0, 0, 0.768);
@@ -123,12 +156,14 @@ a {
 }
 
 .img-container {
-    align-items: center;
+    flex-grow: 1;
+    flex-flow: row wrap;
 }
 
 
-.section-three {
-
+.section-three,
+.section-four {
+    padding: 50px;
 }
 
 .quote-container {
@@ -155,11 +190,6 @@ a {
     font-weight: bolder;
     padding: 10px;
 }
-
-
-
-
-
 
 
 button {
