@@ -30,6 +30,7 @@ body {
 .quote-container {
     display: flex;
     /* border: rgb(245, 245, 245) double; */
+    flex-wrap: wrap;
     
 }
 
@@ -40,6 +41,8 @@ body {
 .section-four {
     flex-grow: 1;
     flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .header,
@@ -77,19 +80,32 @@ a {
 }
 .section-one,
 .section-three {
+    align-items: center;
     justify-content: center;
     background-color: rgba(59, 0, 0, 0.74);
     color: rgb(189, 165, 132);
     border: black outset;
     
 }
+.section-one {
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.content-one{
+    
+    align-items: center;
+}
 
+.container-one{
+    align-items: center;
+    justify-content: center;
+}
 .container-one,
 .section-two {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 10%;
 }
 
 .img-one,
@@ -104,6 +120,7 @@ a {
 
 .img-text {
     max-width: 200px;
+    margin-left: 15px;
 }
 
 .title  {
@@ -114,12 +131,13 @@ a {
     
 }
 .thrall {
-    width: 375px;
-    height: 375px;
+    max-width: 375px;
+    max-height: 375px;
     margin: 10px;
     border-radius: 10%;
     align-self: center;
     border: black solid;
+   
     
 }
 
